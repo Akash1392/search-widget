@@ -1,3 +1,9 @@
+## Search-Widget
+On click of search button - list titles of the 5 latest blog posts.
+
+## Dependencies
+Angular 2
+
 ## Pre-requisites
 
 Following packages need to be available globally on the build server
@@ -15,8 +21,6 @@ Following packages need to be available globally on the build server
 `typings install`
 
 `npm install crypto-js`
-
-`npm i angular2-spinner`
 
 `npm install`
 
