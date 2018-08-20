@@ -1,0 +1,8 @@
+/* ===================== Media query variables ==================== */
+body {
+  background-image: url("static/solar.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden !important;
+}

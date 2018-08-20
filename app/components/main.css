@@ -1,0 +1,791 @@
+/* ===================== Media query variables ==================== */
+body {
+  background-image: url("static/atomosback.png");
+  background-size: cover; }
+
+.atom-brand {
+  padding: 0 !important; }
+
+/* ===================================== */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.preview-menu {
+  margin: 10px;
+  background-color: #00FF00;
+  width: 100%; }
+  .preview-menu.active {
+    border: 3px solid black; }
+
+.clickable {
+  cursor: hand; }
+
+.delete-button {
+  font-size: 26px; }
+
+.text-bold {
+  font-weight: bold; }
+
+.bottom-border {
+  border-bottom: 2px solid #e4e4e4; }
+
+.sub-heading {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: grey; }
+
+.text-table-header {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: grey; }
+
+.font-large {
+  font-size: 24px; }
+
+.font-medium {
+  font-size: 20px; }
+
+.font-small {
+  font-size: 14px; }
+
+.shadow-simple {
+  box-shadow: 2px 2px 2px gray; }
+
+.rounded-simple {
+  border-radius: 5px; }
+
+.lcd-display {
+  background-color: #e4e4e4;
+  padding: 8px;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  border: solid 4px #FFF;
+  border-radius: 8px; }
+
+.spacer-large {
+  height: 40px; }
+
+.spacer-medium {
+  height: 20px; }
+
+.margin-top-medium {
+  margin-top: 20px !important; }
+
+.margin-right-medium {
+  margin-right: 20px; }
+
+.margin-medium {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important; }
+
+.compact-h {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.margin-around {
+  margin: 10px; }
+
+.row-divider {
+  border: 2px solid grey; }
+
+.row-divider-light {
+  border: 1px solid #a1a1a1; }
+
+.text-disabled {
+  color: grey; }
+
+.text-default {
+  color: #000; }
+
+button {
+  min-width: 73px; }
+
+.vcenter {
+  align-items: center;
+  display: flex; }
+
+input[type=range] {
+  -webkit-appearance: none;
+  min-width: 250px;
+  margin: 13.8px 0; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rebeccapurple;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; }
+
+input[type=range][disabled]::-webkit-slider-runnable-track {
+  background: lightgrey; }
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+  opacity: 1; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rebeccapurple; }
+
+input[type=range][disabled]:focus::-webkit-slider-runnable-track {
+  background: lightgrey; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101; }
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer; }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]::-ms-fill-upper {
+  background: rebeccapurple;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 8.4px; }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: rebeccapurple; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: rebeccapurple; }
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  vertical-align: top;
+  font-style: italic;
+  font-size: 16px; }
+
+.toggle-label-suffix {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 16px; }
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px; }
+
+.toggle-switch input {
+  display: none; }
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: darkslategray;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 4px; }
+
+input:checked + .toggle-slider {
+  background-color: rebeccapurple; }
+
+input:disabled + .toggle-slider {
+  background-color: grey; }
+
+input:focus + .toggle-slider {
+  box-shadow: 0 0 1px rebeccapurple; }
+
+input:checked + .toggle-slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px); }
+
+/* Rounded sliders */
+.switch-component {
+  background: #f0f0f0;
+  /* ===== Reusable styles ============== */ }
+  .switch-component .switch-area {
+    padding: 20px 0 15px 0;
+    margin-right: 0;
+    margin-left: 0; }
+  .switch-component .inner-circle {
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid #BFA0A0; }
+  .switch-component .vertical-line {
+    height: 30px;
+    width: 4px;
+    background-color: #A0AFA0;
+    border: 2px solid #A0AFA0;
+    border-radius: 8px; }
+  .switch-component .switch-buttons {
+    /* end of switch-button */ }
+    .switch-component .switch-buttons .switch-button {
+      height: 50px;
+      width: 50px;
+      border-radius: 3px;
+      box-shadow: 3px 3px 2px #606060;
+      margin-bottom: 8px; }
+      .switch-component .switch-buttons .switch-button.switch-on {
+        padding: 10px 23px;
+        background-color: #334c30; }
+        .switch-component .switch-buttons .switch-button.switch-on.lighted {
+          background-color: #00FF00;
+          box-shadow: 0px 0px 12px 6px #A1FF87; }
+          .switch-component .switch-buttons .switch-button.switch-on.lighted .vertical-line {
+            background-color: white;
+            border: 2px solid white; }
+      .switch-component .switch-buttons .switch-button.switch-off {
+        padding: 10px 9px;
+        background-color: #4B1319; }
+        .switch-component .switch-buttons .switch-button.switch-off.lighted {
+          background: #FF0000;
+          box-shadow: 0px 0px 12px 6px #f18f90; }
+          .switch-component .switch-buttons .switch-button.switch-off.lighted .inner-circle {
+            border: 4px solid white; }
+          .switch-component .switch-buttons .switch-button.switch-off.lighted.dull {
+            padding: 4px; }
+            .switch-component .switch-buttons .switch-button.switch-off.lighted.dull .inner-circle {
+              border: 4px solid #BFA0A0; }
+  .switch-component .switch-connector {
+    border: 4px solid white;
+    height: 108px; }
+    .switch-component .switch-connector.left {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-right: none; }
+    .switch-component .switch-connector.right {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-left: none; }
+    .switch-component .switch-connector .inner-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #c8c8c8;
+      margin: 33px auto 10px auto; }
+  .switch-component.inverted .switch-buttons {
+    padding-left: 15px; }
+  .switch-component.normal .switch-buttons {
+    padding-right: 15px; }
+
+/* Small devices (phones,tablets, 767px and 320px */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body .container-fluid {
+    padding: 0px; }
+    body .container-fluid .switch .switch-display {
+      margin-left: 5px;
+      margin-right: 5px; }
+      body .container-fluid .switch .switch-display .serial-number {
+        left: 5px; }
+    body .container-fluid .switch .switch-connector {
+      position: relative; }
+      body .container-fluid .switch .switch-connector .inner-circle {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: 3px; } }
+.panel-component2 {
+  width: 800px;
+  height: 1957px;
+  background-image: url("static/atomosspanelback.png");
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 50px;
+  margin: 0 auto; }
+  .panel-component2 .panel-display {
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    width: 217px;
+    height: 170px;
+    margin-left: 337px;
+    margin-bottom: 64px; }
+    .panel-component2 .panel-display span {
+      font-size: 15px; }
+  .panel-component2 .switch-row .switch-single {
+    display: inline-block;
+    width: 271px;
+    height: 220px;
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 4px; }
+    .panel-component2 .switch-row .switch-single .info {
+      float: right;
+      height: 23px;
+      width: 23px;
+      text-align: center;
+      background-color: black;
+      border-radius: 23px;
+      color: white;
+      font-weight: bold; }
+    .panel-component2 .switch-row .switch-single .switch-display2 {
+      height: 122px;
+      width: 82px;
+      margin-top: 48px;
+      padding: 4px; }
+      .panel-component2 .switch-row .switch-single .switch-display2 .switch-lcd-top-line {
+        font-size: 0%; }
+      .panel-component2 .switch-row .switch-single .switch-display2 .switch-lcd-middle-first-line {
+        position: relative;
+        font-size: 10px;
+        text-align: left;
+        line-height: 10px;
+        margin-top: 28px; }
+      .panel-component2 .switch-row .switch-single .switch-display2 .switch-lcd-middle-second-line {
+        font-size: 12px;
+        text-align: center; }
+      .panel-component2 .switch-row .switch-single .switch-display2 .switch-lcd-bottom-line {
+        margin-top: 20px;
+        font-size: 12px;
+        text-align: right; }
+    .panel-component2 .switch-row .switch-single.switch-left {
+      margin-left: 130px; }
+      .panel-component2 .switch-row .switch-single.switch-left.closed {
+        background-image: url("static/sw53.jpg"); }
+      .panel-component2 .switch-row .switch-single.switch-left.standby {
+        background-image: url("static/sw54.jpg"); }
+      .panel-component2 .switch-row .switch-single.switch-left.open {
+        background-image: url("static/sw56.png"); }
+        .panel-component2 .switch-row .switch-single.switch-left.open.odd {
+          background-image: url("static/sw54.jpg"); }
+      .panel-component2 .switch-row .switch-single.switch-left .info {
+        margin-right: 5px; }
+      .panel-component2 .switch-row .switch-single.switch-left .switch-display2 {
+        margin-left: 33px; }
+    .panel-component2 .switch-row .switch-single.switch-right {
+      margin-left: 87px; }
+      .panel-component2 .switch-row .switch-single.switch-right.closed {
+        background-image: url("static/sw51.jpg"); }
+      .panel-component2 .switch-row .switch-single.switch-right.standby {
+        background-image: url("static/sw52.jpg"); }
+      .panel-component2 .switch-row .switch-single.switch-right.open {
+        background-image: url("static/sw55.png"); }
+        .panel-component2 .switch-row .switch-single.switch-right.open.odd {
+          background-image: url("static/sw52.jpg"); }
+      .panel-component2 .switch-row .switch-single.switch-right .switch-display2 {
+        margin-left: 155px; }
+
+/* Small devices (phones,tablets, 767px and 320px */
+.no-switch-component {
+  background: #eaeaea;
+  position: relative;
+  height: 157px;
+  border: 1px solid white; }
+  .no-switch-component .no-switch-handle {
+    height: 30px;
+    width: 10px;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 5px;
+    box-shadow: 3px 3px 3px 0px #606060; }
+  .no-switch-component .no-switch-hinge {
+    height: 15px;
+    width: 5px;
+    border-left: 2px solid #A0A0A0;
+    border-right: 2px solid #A0A0A0; }
+    .no-switch-component .no-switch-hinge:nth-child(2) {
+      position: absolute;
+      margin-top: 30px;
+      right: 5px; }
+    .no-switch-component .no-switch-hinge:nth-child(3) {
+      position: absolute;
+      margin-top: 70px;
+      right: 5px; }
+    .no-switch-component .no-switch-hinge:last-child {
+      position: absolute;
+      margin-top: 110px;
+      right: 5px; }
+
+.switch-details-component {
+  width: 890px;
+  margin: 0 auto; }
+  .switch-details-component .switch-single {
+    display: inline-block;
+    vertical-align: top;
+    width: 308px;
+    height: 250px;
+    background-size: cover;
+    padding: 0;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white; }
+    .switch-details-component .switch-single .switch-display2 {
+      height: 122px;
+      width: 94px;
+      margin-top: 52px;
+      padding: 4px; }
+      .switch-details-component .switch-single .switch-display2 .switch-lcd-top-line {
+        font-size: 12px; }
+      .switch-details-component .switch-single .switch-display2 .switch-lcd-middle-first-line {
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+        line-height: 20px;
+        margin-top: 36px; }
+      .switch-details-component .switch-single .switch-display2 .switch-lcd-middle-second-line {
+        font-size: 12px;
+        text-align: center; }
+      .switch-details-component .switch-single .switch-display2 .switch-lcd-bottom-line {
+        margin-top: 30px;
+        font-size: 12px;
+        text-align: right; }
+    .switch-details-component .switch-single.switch-left.closed {
+      background-image: url("static/sw53.jpg"); }
+    .switch-details-component .switch-single.switch-left.standby {
+      background-image: url("static/sw54.jpg"); }
+    .switch-details-component .switch-single.switch-left.open {
+      background-image: url("static/sw56.png"); }
+      .switch-details-component .switch-single.switch-left.open.odd {
+        background-image: url("static/sw54.jpg"); }
+    .switch-details-component .switch-single.switch-left .switch-display2 {
+      margin-left: 37px; }
+    .switch-details-component .switch-single.switch-right.closed {
+      background-image: url("static/sw51.jpg"); }
+    .switch-details-component .switch-single.switch-right.standby {
+      background-image: url("static/sw52.jpg"); }
+    .switch-details-component .switch-single.switch-right.open {
+      background-image: url("static/sw55.png"); }
+      .switch-details-component .switch-single.switch-right.open.odd {
+        background-image: url("static/sw52.jpg"); }
+    .switch-details-component .switch-single.switch-right .switch-display2 {
+      margin-left: 155px; }
+    .switch-details-component .switch-single .switch-buttons {
+      margin-top: 35px;
+      margin-left: 25px; }
+      .switch-details-component .switch-single .switch-buttons .btn {
+        width: 80px;
+        margin-right: 5px; }
+  .switch-details-component .switch-real-time-component {
+    display: inline-block;
+    width: 578px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white;
+    padding: 12px; }
+    .switch-details-component .switch-real-time-component .metering {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04); }
+      .switch-details-component .switch-real-time-component .metering .decimal {
+        font-size: 24px; }
+  .switch-details-component .rename-switch {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: block;
+    padding: 10px; }
+  .switch-details-component .close-switch, .switch-details-component .open-switch {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: block;
+    padding: 10px; }
+
+/* Small devices (phones,tablets, 767px and 320px */
+/* Small devices (phones,tablets, 767px and 320px */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .switch-real-time-component .metering .decimal {
+    font-size: 14px; }
+  .switch-real-time-component .metering .font-large {
+    font-size: 18px; }
+  .switch-real-time-component .metering .font-medium {
+    font-size: 14px; } }
+.relay-management-component {
+  width: 890px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white; }
+  .relay-management-component .relay-header {
+    display: inline-block;
+    width: 100%;
+    padding: 2% 2% 0 2%; }
+    .relay-management-component .relay-header .relay-expander {
+      display: inline-block;
+      width: 3%; }
+    .relay-management-component .relay-header .relay-state {
+      display: inline-block;
+      width: 50%; }
+      .relay-management-component .relay-header .relay-state .toggle-label {
+        color: grey; }
+  .relay-management-component .relay-read-only-params {
+    padding-left: 100px; }
+    .relay-management-component .relay-read-only-params button {
+      height: 20px;
+      font-size: 10px;
+      line-height: 5px;
+      width: 40px; }
+  .relay-management-component .relay-params {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 3%;
+    box-shadow: 0px 0px 10px white; }
+    .relay-management-component .relay-params .param-label, .relay-management-component .relay-params .param-slider {
+      display: block;
+      font-weight: normal;
+      width: 100%; }
+
+/* Small devices (phones,tablets, 767px and 320px */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .relay-management-component .font-large {
+    font-size: 18px; }
+  .relay-management-component .font-medium {
+    font-size: 14px; }
+  .relay-management-component .font-small {
+    font-size: 12px; } }
+.routine-management-component {
+  width: 890px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 22px; }
+  .routine-management-component .modal-title {
+    text-align: center; }
+  .routine-management-component form {
+    width: 200px;
+    margin: 0 auto; }
+    .routine-management-component form label {
+      font-size: 18px;
+      font-weight: normal; }
+  .routine-management-component .modal-message {
+    text-align: center; }
+
+.switch-display-component .switch-lcd-top-line {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 12px; }
+.switch-display-component .switch-lcd-middle-first-line {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 28px; }
+.switch-display-component .switch-lcd-middle-second-line {
+  font-size: 12px;
+  text-align: center; }
+.switch-display-component .switch-lcd-bottom-line {
+  position: absolute;
+  font-size: 12px;
+  text-align: right;
+  right: 4px;
+  bottom: 4px; }
+
+.user-details-component {
+  background-color: white;
+  opacity: 0.75;
+  color: white; }
+  .user-details-component .modal {
+    color: #000; }
+  .user-details-component #deleteUserModal form > div {
+    margin-bottom: 15px; }
+  .user-details-component table {
+    color: #000; }
+
+/* Small devices (phones,tablets, 767px and 320px */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .user-details-component form input[type=text].last-name {
+    margin-top: 20px; } }
+.panel-list-component .panel-list {
+  width: 200px;
+  display: inline-block;
+  background-color: lightgrey;
+  border: 2px solid #000;
+  font-size: 22px;
+  color: #000;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
+  box-shadow: 2px 2px 5px mediumpurple;
+  border: 2px solid rebeccapurple; }
+  .panel-list-component .panel-list.highlight {
+    background-color: #fff; }
+    .panel-list-component .panel-list.highlight .panel-name, .panel-list-component .panel-list.highlight .panel-parent {
+      background: mediumpurple; }
+  .panel-list-component .panel-list .panel-name {
+    height: 60px;
+    vertical-align: middle;
+    color: white;
+    background: rebeccapurple; }
+    .panel-list-component .panel-list .panel-name span {
+      vertical-align: middle; }
+  .panel-list-component .panel-list .panel-rating {
+    height: 60px;
+    padding: 14px;
+    font-size: 26px; }
+  .panel-list-component .panel-list .panel-parent {
+    height: 50px;
+    font-size: 16px;
+    border-top: 2px solid mediumpurple;
+    color: white;
+    background: rebeccapurple; }
+
+.trip-curve-parameters {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
+  padding: 10px;
+  margin-top: 10px; }
+  .trip-curve-parameters form {
+    padding: 0px 5% 0px 5%; }
+  .trip-curve-parameters .slider-label {
+    width: 100%;
+    padding: 10px 0px 5px 0px; }
+  .trip-curve-parameters .slider-input {
+    width: 100%;
+    padding: 0px 0px 0px 0px; }
+    .trip-curve-parameters .slider-input .slider-max, .trip-curve-parameters .slider-input .slider-min {
+      display: inline-block;
+      width: 5%; }
+    .trip-curve-parameters .slider-input input[type=range] {
+      display: inline-block;
+      width: 85%; }
+  .trip-curve-parameters .button-group {
+    padding: 20px 0px 5px 0px; }
+    .trip-curve-parameters .button-group input {
+      margin-right: 5px; }
+    .trip-curve-parameters .button-group div.wirecheckbox {
+      display: inline-block; }
+      .trip-curve-parameters .button-group div.wirecheckbox label {
+        font-weight: normal;
+        font-style: italic;
+        color: purple; }
+      .trip-curve-parameters .button-group div.wirecheckbox input {
+        transform: scale(1.5, 1.5);
+        margin-left: 10px; }
+
+.trip-curve-chart {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
+  padding: 10px;
+  margin-top: 10px; }
+  .trip-curve-chart .coordination {
+    margin-top: 10px;
+    padding: 0 3% 0 3%; }
+    .trip-curve-chart .coordination form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 2% 10px 2%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .trip-curve-chart .coordination form .coordination-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        align-content: stretch;
+        justify-content: center; }
+        .trip-curve-chart .coordination form .coordination-list > div > div {
+          width: 200px; }
+        .trip-curve-chart .coordination form .coordination-list .close-button {
+          color: red;
+          font-size: 22px; }
+      .trip-curve-chart .coordination form .coordinated-switch {
+        background-color: rgba(0, 0, 0, 0.05);
+        margin: 2px; }
+      .trip-curve-chart .coordination form .no-coordination-list {
+        text-align: center;
+        padding: 5px; }
+      .trip-curve-chart .coordination form button {
+        margin-top: 5px; }
+  .trip-curve-chart .toggle-switch-container {
+    background-color: white;
+    margin: 0px 25px 0px 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; }
+  .trip-curve-chart .checkbox {
+    width: 100%;
+    text-align: right;
+    font-size: 22px; }
+    .trip-curve-chart .checkbox input {
+      transform: scale(2, 2);
+      margin: 5%; }
+  .trip-curve-chart .trip-curve-chart-component {
+    width: 820px;
+    margin: 0px 25px 0px 25px; }
+  .trip-curve-chart #coordinateModal .coordinate-switch form .message {
+    margin-bottom: 10px; }
+  .trip-curve-chart #coordinateModal .coordinate-switch form .list {
+    display: inline;
+    margin: 10px 10px; }
+  .trip-curve-chart #coordinateModal .coordinate-switch form .btn-danger {
+    margin-top: 10px; }
+
+.user-profile {
+  width: 890px;
+  margin: 10px auto 0px auto;
+  background-color: rgba(255, 255, 255, 0.75); }
+  .user-profile .user-profile-component {
+    padding: 10px; }
+  .user-profile .user-profile-questions {
+    padding: 10px; }
+  .user-profile hr {
+    height: 5px;
+    background-color: white; }
+
+/*# sourceMappingURL=main.css.map */

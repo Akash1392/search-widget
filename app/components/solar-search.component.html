@@ -1,0 +1,32 @@
+<div class="row user-login-component" style="margin-top: 200px;">
+
+    <form class="login-form col-md-offset-4 col-md-4"  style="background-color: #EEEEEE; box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.5); ">
+
+        <div class="form-group">
+            <label>Search Widget:
+            <input  style="background-color: #1D8472;font-family: FontAwesome,Arial ;box-shadow: 2px 2px 2px rgba(0,0,0,0.5); " type="submit"  (click)="search()" value="Search" [size]="100">&nbsp;
+            </label>
+            <input name="title"  onfocus="this.value=''" placeholder="Search" type="text" class="form-control" id="usr" (click)="search2()" [(ngModel)]="title" focus="true"  >
+            <p  *ngIf="!temp2"><font color="red">please enter text!</font></p>
+            <div *ngIf="temp2 && title.length" >
+                <table class="table table-striped table-bordered table-list"  style="font-family: Arial;">
+
+
+                    <!--<tr *ngFor="let item of users | search:'id,title.rendered':username">-->
+                        <!--<td class="clickable delete-button"> {{users[item].id}}</td>-->
+                        <!--<a style="font-size: 20px" href="https://www.thesitewizard.com/" target="_blank">thesitewizard.com </a>-->
+
+                    <tr style="height: 20px" *ngFor="let item of list | search:'id,rendered':title; let i = index">
+                        <a *ngIf= "i < 5" style="font-size: 15px" href={{this.apiService.data[i].link}}  target="_blank">{{item.rendered}} </a>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
