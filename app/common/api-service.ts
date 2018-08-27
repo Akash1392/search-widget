@@ -6,7 +6,7 @@ import 'rxjs/Rx';
 
 import {Router} from "@angular/router";
 import {Logger} from "./logger";
-import {Session} from "./session";
+
 
 @Injectable()
 export class
@@ -18,7 +18,6 @@ ApiService {
     constructor(private http: Http,
                 private router: Router,
                 private logger: Logger,
-                private session: Session,
                 ) {
         this.apiUrl = config.api.url;
 
