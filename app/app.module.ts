@@ -11,8 +11,6 @@ import {Location} from "@angular/common";
 import {ApiService} from "./common/api-service";
 import {SolarSearchComponent} from "./components/solar-search.component";
 
-import {Session} from "./common/session";
-
 import {SearchPipe} from "./common/searchByPipe";
 
 import {NguiDatetimePickerModule} from "@ngui/datetime-picker";
@@ -39,7 +37,7 @@ import {MyDatePickerModule} from "mydatepicker";
 
 
     ],
-    providers: [ErrorHandler, Logger, Location, ApiService, Session
+    providers: [ErrorHandler, Logger, Location, ApiService
     ],
     bootstrap:    [
         AppComponent
